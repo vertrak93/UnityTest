@@ -1,15 +1,24 @@
 fileFormatVersion: 2
-guid: 76674960a2f73a843bc9773913e32b69
+guid: 38ddd73b8312f794e821b72ff7b44dd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9152689546471649384
-    second: piedra_0
+      213: -5015879577500409219
+    second: Suelo_4_0
+  - first:
+      213: -5715928661624900587
+    second: Suelo_4_1
+  - first:
+      213: 8742573404664877135
+    second: Suelo_4_2
+  - first:
+      213: -8261020780292727156
+    second: Suelo_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -28,7 +37,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMipmapLimit: 1
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -48,7 +57,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 110
@@ -75,9 +84,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piedra_0
+      name: Suelo_4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 60
-        width: 128
-        height: 68
+        x: 10
+        y: 153
+        width: 112
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89f402bb95d1bf080800000000000000
-      internalID: -9152689546471649384
+      spriteID: d72a3fa7914046ab0800000000000000
+      internalID: -5015879577500409219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo_4_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 151
+        width: 112
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514bf52aa21fca0b0800000000000000
+      internalID: -5715928661624900587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo_4_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 112
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40d3dff03cd35970800000000000000
+      internalID: 8742573404664877135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo_4_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 10
+        width: 112
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e188c7e55fa5d80800000000000000
+      internalID: -8261020780292727156
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      piedra_0: -9152689546471649384
+      Suelo_4_0: -5015879577500409219
+      Suelo_4_1: -5715928661624900587
+      Suelo_4_2: 8742573404664877135
+      Suelo_4_3: -8261020780292727156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
