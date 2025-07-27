@@ -53,5 +53,8 @@ TagManager:
   - name: Player
     uniqueID: 3249199061
     locked: 0
+  - name: Paredes
+    uniqueID: 3957307929
+    locked: 0
   m_RenderingLayers:
   - Default

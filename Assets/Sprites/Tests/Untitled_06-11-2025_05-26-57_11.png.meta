@@ -1,24 +1,24 @@
 fileFormatVersion: 2
-guid: 38ddd73b8312f794e821b72ff7b44dd4
+guid: 2d3bac2ba47507645871f69319ba45b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5015879577500409219
-    second: Suelo_4_0
+      213: 5430919155337118052
+    second: Untitled_06-11-2025_05-26-57_11_0
   - first:
-      213: -5715928661624900587
-    second: Suelo_4_1
+      213: -4386820854291129170
+    second: Untitled_06-11-2025_05-26-57_11_1
   - first:
-      213: 8742573404664877135
-    second: Suelo_4_2
+      213: -1758560331925781323
+    second: Untitled_06-11-2025_05-26-57_11_2
   - first:
-      213: -8261020780292727156
-    second: Suelo_4_3
+      213: 130629358853874470
+    second: Untitled_06-11-2025_05-26-57_11_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,7 +37,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 1
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 110
+  spritePixelsToUnits: 112
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,9 +84,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -122,165 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Suelo_4_0
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 154
-        width: 110
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      physicsShape:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      tessellationDetail: -1
-      bones: []
-      spriteID: d72a3fa7914046ab0800000000000000
-      internalID: -5015879577500409219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Suelo_4_2
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 152
-        width: 110
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      physicsShape:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      tessellationDetail: -1
-      bones: []
-      spriteID: f40d3dff03cd35970800000000000000
-      internalID: 8742573404664877135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Suelo_4_3
+      name: Untitled_06-11-2025_05-26-57_11_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 11
-        width: 110
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 130
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      physicsShape:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
+      outline: []
+      physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8e188c7e55fa5d80800000000000000
-      internalID: -8261020780292727156
+      spriteID: 461cbb192308e5b40800000000000000
+      internalID: 5430919155337118052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suelo_4_4
+      name: Untitled_06-11-2025_05-26-57_11_1
       rect:
         serializedVersion: 2
         x: 137
-        y: 11
-        width: 111
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 129
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      physicsShape:
-      - - {x: 0, y: -56}
-        - {x: 56, y: 0}
-        - {x: 0, y: 56}
-        - {x: -56, y: 0}
-      tessellationDetail: 0
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 8ec60022c361e4e49bdbede31db01aa0
-      internalID: -341885080
+      spriteID: eac93b6eca1ee13c0800000000000000
+      internalID: -4386820854291129170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suelo_4_1
+      name: Untitled_06-11-2025_05-26-57_11_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 184
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8
+        y: 7
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1a89f6d8c293cc543a919d228c44198c
-      internalID: -5715928661624900587
+      spriteID: 5b4887302b65897e0800000000000000
+      internalID: -1758560331925781323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suelo_4_5
+      name: Untitled_06-11-2025_05-26-57_11_3
       rect:
         serializedVersion: 2
-        x: 252
-        y: 60
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 136
+        y: 7
+        width: 112
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: afe6514f462e36f4f8553539c31a27d3
-      internalID: 1434437536
+      spriteID: 623e8b3b5b610d100800000000000000
+      internalID: 130629358853874470
       vertices: []
       indices: 
       edges: []
@@ -289,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f103f53c0ccbf51429b4c7bbd0665007
+    spriteID: 9e1a2aa03e85da84eac509bcb3f2c544
     internalID: 0
     vertices: []
     indices: 
@@ -297,18 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Suelo_4_0: -5015879577500409219
-      Suelo_4_1: -5715928661624900587
-      Suelo_4_2: 8742573404664877135
-      Suelo_4_3: -8261020780292727156
-      Suelo_4_4: -341885080
-      Suelo_4_5: 1434437536
+      Untitled_06-11-2025_05-26-57_11_0: 5430919155337118052
+      Untitled_06-11-2025_05-26-57_11_1: -4386820854291129170
+      Untitled_06-11-2025_05-26-57_11_2: -1758560331925781323
+      Untitled_06-11-2025_05-26-57_11_3: 130629358853874470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
