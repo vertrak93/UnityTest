@@ -2064,7 +2064,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 1.07
+  orthographic size: 1.8723959
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3222,6 +3222,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   lastMovement: {x: 0, y: 0}
+  curveY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  jumpDistance: 1
 --- !u!212 &1555564590
 SpriteRenderer:
   m_ObjectHideFlags: 0

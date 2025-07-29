@@ -6,30 +6,68 @@ public class PlayerController : MonoBehaviour
 
     private bool walkingState = false;
     public Vector2 lastMovement = Vector2.zero;
-
-    private Vector2 move = Vector2.zero;           // ✅ Agregá esta línea
-    private Vector2 virtualMove = Vector2.zero;    // ✅ Agregá esta línea
+    private Vector2 move = Vector2.zero;
+    private Vector2 virtualMove = Vector2.zero;
 
     private const string _horizontal = "Horizontal";
     private const string _vertical = "Vertical";
     private const string _lastHorizontal = "LastHorizontal";
     private const string _lastVertical = "LastVertical";
     private const string _walking = "Walking";
+    private const string _jump = "Jump";
 
     private Animator _animator;
 
     private Rigidbody2D playerRigidbody;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    Vector2 currentPos;
+    Vector2 landingPos;
+    float landingDis;
+    float timeElapsed = 0f;
+    bool onGround = true;
+    bool jump = false;
+
+    [SerializeField] AnimationCurve curveY;
+    [SerializeField] float jumpDistance = 1f;
     void Start()
     {
         _animator = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody2D>();
-         //playerRigidbody.freezeRotation = true;
+        playerRigidbody.freezeRotation = true;
     }
 
-    // Update is called once per frame
     void Update()
+    {
+        InpuntHandler();
+    }
+
+    void FixedUpdate()
+    {
+        if(jump)
+        {
+            JumpHandler();
+        }
+        else
+        {
+            MovementHandler();
+        }
+    }
+
+    void MovementHandler()
+    {
+        if (move != Vector2.zero)
+        {
+            move.Normalize();
+            Vector2 targetPos = playerRigidbody.position + move * speed * Time.deltaTime;
+            targetPos.x = Mathf.Round(targetPos.x * 100f) / 100f;
+            targetPos.y = Mathf.Round(targetPos.y * 100f) / 100f;
+            playerRigidbody.MovePosition(targetPos);
+            playerRigidbody.rotation = 0f;
+        }
+    }
+
+    void InpuntHandler()
     {
         walkingState = false;
 
@@ -79,11 +117,13 @@ public class PlayerController : MonoBehaviour
             virtualMove = move;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) && onGround)
+        {
+            jump = true;
+        }
+
         if (move != Vector2.zero)
         {
-            // move.Normalize();
-            // transform.Translate(move * speed * Time.deltaTime);
-
             lastMovement = virtualMove;
             walkingState = true;
         }
@@ -93,20 +133,34 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool(_walking, walkingState);
         _animator.SetFloat(_lastVertical, lastMovement.y);
         _animator.SetFloat(_lastHorizontal, lastMovement.x);
+        _animator.SetBool(_jump, jump);
     }
-    
-    void FixedUpdate()
-    {
-        if (move != Vector2.zero)
-        {
-            move.Normalize();
-            Vector2 targetPos = playerRigidbody.position + move * speed * Time.deltaTime;
-            targetPos.x = Mathf.Round(targetPos.x * 100f) / 100f;
-            targetPos.y = Mathf.Round(targetPos.y * 100f) / 100f;
-            playerRigidbody.MovePosition(targetPos);
 
-            // 🔁 Mantener rotación fija si Unity la modifica
-            playerRigidbody.rotation = 0f;
+    void JumpHandler()
+    {
+        if(onGround)
+        {
+            currentPos = playerRigidbody.position;
+            landingPos = currentPos + move.normalized * speed;
+            landingDis = Vector2.Distance(landingPos, currentPos);
+            timeElapsed = 0f;
+            onGround = false;
+        }
+        else
+        {
+            timeElapsed += Time.fixedDeltaTime * speed / landingDis;
+            if(timeElapsed <= 1f)
+            {
+                currentPos = Vector2.MoveTowards(currentPos, landingPos, Time.fixedDeltaTime * speed);
+                playerRigidbody.MovePosition(new Vector2(currentPos.x, currentPos.y + curveY.Evaluate(timeElapsed)));
+            }
+            else
+            {
+                jump = false;
+                onGround = true;
+            }
         }
     }
+
 }
+
